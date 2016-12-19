@@ -1,8 +1,15 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wx6dd9934f43cae490", "7a3207104c06ab936cd88fe80ede9cd2");
+$signPackage = $jssdk->GetSignPackage();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<meta name = "viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<script src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 		<script data-main ="app.js" type="text/javascript" src = "js/require.js"></script>
 		<title></title>
 		<style>
@@ -104,4 +111,15 @@
 		    }
 		})(window);
 	</script>-->
+	<script>
+		wx.config({
+    debug: true,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+     jsApiList: []
+  });
+
+	</script>
 </html>
