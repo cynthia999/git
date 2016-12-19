@@ -1,0 +1,34 @@
+<!--<script type="text/html" id="marketTmp2">
+	<%for(var n=0;n<data.products["104749"].length;n++){%>
+		<figure>
+			<img src="<%=data.products["104749"][n].img%>"/>
+			<figcaption>
+				<p class="p1"><%=data.products["104749"][n].name%></p>
+				<span>精选</span>
+				<p class="p2"><%=data.products["104749"][n].specifics%></p>
+				<i>￥<%=data.products["104749"][n].price%></i>
+			</figcaption>
+				<div>+</div>	
+		</figure>
+	<%}%>
+	<figure></figure>
+</script>-->
+<!--//闪送超市数据-->
+<script type="text/html" id="marketTmp2">
+	<%for(var n in data.products){%>
+		<%for(var m in data.products[n]){%>
+		<figure index2="<%=n%>">
+			<img data-original="<%=data.products[n][m].img%>" class="lazy" />
+			<figcaption>
+				<p class="p1"><%=data.products[n][m].name%></p>
+				<span>精选</span>
+				<p class="p2"><%=data.products[n][m].specifics%></p>
+				<i>￥<%=data.products[n][m].price%></i>
+			</figcaption>
+				<div class="addcar">+</div>	
+		</figure>	
+		<%}%>
+	<%}%>
+	<figure></figure>
+	<figure></figure>
+</script>

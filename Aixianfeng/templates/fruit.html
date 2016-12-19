@@ -1,0 +1,14 @@
+<script type="text/html" id="fruitTmp">
+	<%for(var n=0;n<data.act_info[5].act_rows[0].category_detail.goods.length;n++){%>
+		<figure>
+				<img src="<%=data.act_info[5].act_rows[0].category_detail.goods[n].img%>" alt="" />				
+				<figcaption>
+					<p><%=data.act_info[5].act_rows[0].category_detail.goods[n].name%></p>
+					<span>精选</span>
+					<p><%=data.act_info[5].act_rows[0].category_detail.goods[n].specifics%></p>
+					<i>￥<%=data.act_info[5].act_rows[0].category_detail.goods[n].partner_price%></i>
+				</figcaption>
+				<div class="addcar">+</div>
+		</figure>
+	<%}%>
+</script>

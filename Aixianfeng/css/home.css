@@ -1,0 +1,337 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:100px;
+}
+body{	
+	font-family:微软雅黑,microsoft yahei;
+	font-size:16px;
+	width: 100%;
+}
+
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;	
+}
+.clearfixed:after{
+	content: ".";
+	clear:both;
+	display: block;
+	height: 0px;
+	visibility: hidden; 
+}
+input,textarea{
+	outline: none;
+}
+/*-----------------------------头部---------------------------------*/
+.head_1{
+	height: 0.59rem;
+	background:#ffd600;	
+	width: 100%;
+	position: fixed;
+	z-index: 9999;	
+}
+.head_1 div{
+	float: left;
+	 height: 0.59rem;;	
+}
+.head_1 .two{
+	width: 72%;
+	text-align: center;
+	line-height: 0.59rem;
+}
+.head_1 .three{
+	padding: 0.09rem 0 0 0;
+	font-size: 0.14rem;
+	text-align: right;	
+}
+.head_1 .one{
+	width: 14%;
+}
+.empty_1{
+	width: 100%;
+	height: 0.55rem;
+}
+.main_1{
+	width: 100%;
+	overflow: auto;
+}
+/*--------------------------banner-----------------------*/
+.banner_1{
+	width: 100%;
+	/*height: 1.55rem;*/
+}
+.banner_1 img{
+	width: 100%;
+	vertical-align: bottom;
+	/*height: 1.55rem;*/
+}
+/*---------------------------分割线------------------------*/
+.fenge_1{
+	height: 0.13rem;
+	background: #efefef;
+}
+/*------------------------imgList---------------------------*/
+.imgList_1{
+	display: flex;
+}
+.imgList_1 figure{
+	flex: 1;
+	text-align: center;
+	margin: 0.2rem 0 0.17rem 0;
+}
+.imgList_1 img{
+	width:80%;	
+}
+/*--------------------------------milk------------------------*/
+.milk_1 li{
+	float: left;
+	width: 33%;
+	border-right: 1px solid #e0e0e0;
+}
+.milk_1 img{
+	width: 100%;
+}
+.milk_1 li:last-child{
+	border: none;
+}
+/*--------------------------------------便利店-----------------------*/
+.store_1 img{
+	width: 100%;
+}
+/*----------------------tejia-------------------------*/
+.tejia_1 {
+	width: 100%;
+	text-align: center;
+}
+.tejia_1 img{
+	width:45% ;
+}
+.tejia_1 img:first-child{
+	margin: 0 3% 0 0 ;
+}
+/*--------------------------------优选水果--------------------*/
+.fruit_1{
+	display: flex;
+}
+.fruit_1 img{
+	width: 80%;
+}
+.fruit_1 figure{
+	flex: 1;
+	text-align: center;
+	margin: 0.1rem 0 0.23rem  0;
+}
+/*-----------------畅饮狂欢----------------------------*/
+.drink_1 li{
+	width: 50%;
+	float: left;
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+.drink_1 li:nth-child(2){
+	border-right:none;
+}
+.drink_1 li:nth-child(4){
+	border-right:none;
+}
+.drink_1 img{
+	width: 100%;
+}
+/*---------------------------------------orange优选水果部分--------------------------*/
+/*-------------------------------item----------------------------*/
+.item_1{
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.item_1 ul{
+	width:93%;
+	margin: 0 auto;
+}
+.item_1 li:first-child{
+	float: left;
+	width: 0.94rem;
+	font-weight: bold;
+	text-indent: 0.19rem;
+	color:#f38631;
+	background: url(../img/line.jpg) no-repeat left center;
+	font-size: 0.17rem;
+}
+.item_1 li:last-child{
+	float: right;
+	width: 0.51rem;
+	background: url(../img/arr.jpg) no-repeat right center;
+	color:#999999;
+}
+.sweet_1{
+	width: 100%;
+	text-align: center;
+	margin: 0 0 0.15rem 0;
+}
+.sweet_1 img{
+	width: 93%;
+}
+/*---------------------price-------------------------*/
+.price_1 figure{
+	width:33%;
+	float: left;
+	position: relative;
+	border-right: 1px solid #e0e0e0;	
+
+}
+.price_1 img{
+	width:98%;
+}
+
+.price_1 span{
+	width:0.4rem ;
+	height: 0.16rem;
+	line-height: 0.1rem;
+	border:1px solid red;
+	display: inline-block;
+	font-size: 0.12rem;
+	border-radius: .04rem;
+	text-align: center;
+	color:#ff0000;
+	margin: 0.1rem 0;
+}
+.price_1 p{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.price_1 figcaption i{
+	font-style:normal;
+	display: inline-block;
+	margin: 0.13rem 0 0 0;
+}
+.price_1 figcaption{
+	margin: 0 0 0 0.09rem;
+}
+.price_1 figure div{
+	font-size: 0.25rem;
+	font-weight: bold;
+	color:#ff4300;
+	width: 0.35rem;
+	height: 0.35rem;
+	line-height: 0.3rem;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #e0e0e0;	
+	position: absolute;
+	right: 7%;
+	bottom: 0;
+	background: #fff;
+}
+.price_1 figure:last-child{
+	border-right: none;
+}
+#fenge1_1,#fenge2_1,#fenge3_1,#fenge4_1,#fenge5_1,#fenge6_1{
+	margin: 0.1rem  0 0 0 ;
+}
+/*--------------------牛奶面包-----------------*/
+#blue_1 li:first-child{
+	color:#20b1fa;
+	background: url(../img/line1.jpg) no-repeat left center;*/
+}
+.price_1 b{
+	font-weight: normal;
+	font-size: 0.12rem;
+	background: red;
+	color: #fff;
+	height: 0.16rem;
+	line-height: 0.1rem;
+	border:1px solid red;
+	display: inline-block;
+	border-radius: .04rem;
+	text-align: center;
+	width: 0.5rem;
+	margin: 0.1rem 0 0 3.9%;
+}
+/*--------------卤味熟食-------------------------------*/
+#brown_1 li:first-child{
+	color:#7b4d03;
+	background: url(../img/26.jpg) no-repeat left center;*/
+}
+/*----------------饮料酒水----------------------------*/
+#red_1 li:first-child{
+	color:#ff3319;
+	background: url(../img/29.jpg) no-repeat left center;*/
+}
+/*----------------零食大趴----------------------------*/
+#food_1 li:first-child{
+	color:#e80013;
+	background: url(../img/29.jpg) no-repeat left center;*/
+}
+/*-------------------------方便速食--------------------*/
+#green_1 li:first-child{
+	color:#1eb2a3;
+	background: url(../img/34.jpg) no-repeat left center;*/
+}
+/*------------------------footer--------------------------*/
+.kongbai_1{
+	height: 0.1rem;
+}
+/*.footer{
+	display: flex;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #f5f5f5;
+}
+.footer figure{
+	flex: 1;
+	text-align: center;
+	margin: 0.06rem 0 0.06rem 0;
+	color: #777777;
+}
+.footer img{
+	width:0.18rem;
+}*/
+
+
+
+
+
+/*.footer img{
+	width:25%;
+	height: 0.22rem;
+}
+.footer{
+	display: flex;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #f5f5f5;
+}
+.footer figure{
+	flex: 1;
+	text-align: center;
+	margin: 0.06rem 0 0.06rem 0;
+	color: #777777;
+}
+.footer span{
+	display: block;
+	height: 0.16rem;
+	line-height:0.16rem;
+	text-align: center;
+	width: 0.16rem;
+	border-radius: 50%;
+	background: red;
+	color:#fff;
+	position: absolute;
+	right:30%;
+	bottom:65%;
+	font-size: 0.14rem;
+}
+.footer figure:nth-child(3){
+	position: relative;
+}*/

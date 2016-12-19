@@ -1,0 +1,208 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:100px;
+}
+body{	
+	font-family:微软雅黑,microsoft yahei;
+	font-size:16px;
+	width: 100%;	
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;	
+}
+.clearfixed:after{
+	content: ".";
+	clear:both;
+	display: block;
+	height: 0px;
+	visibility: hidden; 
+}
+input,textarea{
+	outline: none;
+}
+/*------------------------------------header----------------------------*/
+.dingwei_4{
+	position: fixed;
+	width: 100%;
+	height: 1.74rem;
+}
+.header_4{
+	width: 100%;
+	height: 1.28rem;
+	background: #ffd600;
+}
+.header_4 .one{
+	float: left;
+	width: 18%;
+	margin: 0.27rem 0.2rem 0 0.2rem;
+}
+.header_4 .one img{
+	width: 0.78rem;
+}
+.header_4 .two{
+	float: left;
+	width: 28%;
+	height: 1.28rem;
+}
+.header_4 .two p:last-child{
+	width: 1.08rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding: 0 0 0 0.38rem ;
+	background: url(../img/43.png) no-repeat left center;
+	background-size:1.08rem 0.37rem;
+	font-size:0.14rem;
+	font-weight: bold;
+	color:red;
+}
+.header_4 .two p:first-child{
+	margin: 0.35rem 0 0.08rem 0;
+	font-weight: bold;
+	color:#fff;
+}
+.header_4 .three{
+	float: left;
+	width: 37%;
+	height: 1.28rem;
+	background: url(../img/45.png) no-repeat right center;
+	background-size:0.15rem 0.25rem;
+}
+/*----------------------------------item------------------------------*/
+.item_4{
+	/*position: fixed;*/
+	width: 100%;
+	height: 0.46rem;
+}
+.item_4 ul{
+	width: 100%;
+	height: 0.46rem;
+	line-height: 0.46rem;
+	background: #f3c800;
+}
+.item_4 li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	color:#fff;
+}
+.item_4 li:first-child{
+	background: url(../img/line3.jpg) no-repeat right center;
+}
+.item_4 li:first-child span{
+	display: inline-block;
+	background: url(../img/46.png) no-repeat left center;
+	background-size:auto 0.25rem;
+	padding: 0 0 0 0.42rem;
+}
+.item_4 li:last-child span{
+	display: inline-block;
+	background: url(../img/47.png) no-repeat left center;
+	background-size:0.21rem 0.24rem;
+	padding: 0 0 0 0.42rem;
+}
+.fenge_4{
+	height: 0.1rem;
+	background: #efefef;
+}
+.empty_4{
+	height: 1.74rem;
+}
+/*---------------------------------main---------------------*/
+.main_4{
+	width: 100%;
+	overflow: auto;
+	
+}
+.order_4{
+	width: 100%;
+	height: 0.64rem;
+	border-bottom:1px solid /*#3e0e0e0*/red;
+}
+.order_4 ul{
+	width: 91%;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	margin: 0 auto;
+	
+}
+.order_4 li:first-child{
+	width: 50%;
+	float: left;
+}
+.order_4 li:last-child{
+	width: 50%;
+	float: left;	
+	text-align: right;
+}
+.order_4 li:last-child a{
+	text-align: left;
+	width: 1.2rem;
+	display: inline-block;
+	background: url(../img/48.png) no-repeat right center;
+	background-size: auto 0.1rem ;
+	
+}
+/*-----------------------state-----------------------------*/
+.state_4 {
+	display: flex;
+	
+}
+.state_4 figure{
+	flex:1;
+	text-align: center;
+	margin: 0.3rem 0 0.14rem 0;
+}
+.state_4 img{
+	width: 0.23rem;
+}
+/*-----------------------about1-----------------------------*/
+#about1{
+	border-bottom:1px solid /*#3e0e0e0*/red;
+	padding: 0.2rem 0 0.2rem 0;
+}
+#about1 img,#about2 img{
+	width: 0.3rem;
+}
+#about2 figure{
+	float: left;
+	width:25%;
+	text-align: center;
+	margin: 0.33rem 0 0.23rem 0;
+}
+.fenge2_4{
+	height: 0.3rem;
+	background: #efefef;
+}
+/*----------------------------退出当前账号--------------------*/
+.exit_4{
+	text-align: center;
+	height: 0.45rem;
+	line-height: 0.45rem;
+}
+/*-------------------------底部----------------------*/
+/*.footer{
+	display: flex;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #f5f5f5;
+}
+.footer figure{
+	flex: 1;
+	text-align: center;
+	margin: 0.06rem 0 0.06rem 0;
+	color: #777777;
+}
+.footer img{
+	width:0.18rem;
+}*/

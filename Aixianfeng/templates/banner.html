@@ -1,0 +1,12 @@
+<script type="text/html" id="bannerTmp">
+	<div class="slider">
+	<div class="swiper-container">
+	<div class="swiper-wrapper" >
+	<%for(var n=0;n<data.act_info[0].act_rows.length;n++){%>
+		<div class="swiper-slide"><img src="<%=data.act_info[0].act_rows[n].activity.img%>"></div>
+	<%}%>
+	</div>
+	<div class="swiper-pagination"></div>
+	</div>
+	</div>
+</script>
