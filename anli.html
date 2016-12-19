@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#canvas{
+			border:3px solid purple;
+			/* position: relative;	  */
+		}
+
+
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="400" height="400">
+		
+
+	</canvas><br>
+	<input type="text" id="cuxi">
+	<input type="text" id="color">
+	 <input type="button" id="btn1" value="画">
+	 <input type="button" value="擦" id="btn2">
+	<script>
+			//获取画布对象和2d绘图对象
+			var cavObj=document.getElementById("canvas"),
+			context=cavObj.getContext("2d"),
+			X,Y,
+			//是否绘线标识
+			flag=false;
+			context.lineCap="round";
+			//鼠标按下事件 开始绘图
+			cavObj.onmousedown=function(e){
+				e=e || window.event;
+				//设置可绘制标识为true
+				flag=true;
+				//事件对象中offsetX offsetY 获取鼠标点击位置 到鼠标点击对象的左上角坐标
+				X=e.offsetX;
+				Y=e.offsetY;
+			};
+			//鼠标移动事件 开始图像绘制
+		cavObj.onmousemove=function(e){
+			e=e || window.event;
+			if(flag==true){
+			context.beginPath();
+			//设置绘制起点
+			context.moveTo(X,Y);
+			//绘制终点
+			context.lineTo(e.offsetX,e.offsetY);
+			X=e.offsetX;
+			Y=e.offsetY;
+			//显示绘制结果
+			context.stroke();
+			context.closePath();
+			}
+			
+		};
+
+			//鼠标抬起事件
+			cavObj.onmouseup=function(e){
+				flag=false;
+			};
+			//设置线条按钮
+			document.getElementById("btn1").onclick=function(){
+				context.lineWidth=document.getElementById("cuxi").value || "2";
+				context.strokeStyle=document.getElementById("color").value || "black";
+
+			}
+			//
+			document.getElementById("btn2").onclick=function(){
+				context.lineWidth=document.getElementById("cuxi").value|| "20";
+				context.strokeStyle="white";
+			}
+	</script>
+</body>
+</html>
