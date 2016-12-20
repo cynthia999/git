@@ -86,15 +86,15 @@ $signPackage = $jssdk->GetSignPackage();
 			<div class="footer_a">
 			<figure>
 				<img src="img/f1.png" alt="" />
-				<p><a href="#home_a" onclick="getLocation()" >首页</a></p>
+				<p><a href="#home_a"  >首页</a></p>
 			</figure>
 			<figure>
 				<img src="img/f2.png" alt="" />
-				<p><a href="#market_a" onclick="getPosition()" >闪送超市</a></p>
+				<p><a href="#market_a" onclick="getLocation()" >闪送超市</a></p>
 			</figure>
 			<figure>
 				<img src="img/f3.png" alt="" id="end"/>
-				<p><a href="#order_a">购物车</a></p>
+				<p><a href="#order_a" onclick="getPosition()">购物车</a></p>
 				<span id="count"></span>
 			</figure>
 			<figure>
