@@ -74,9 +74,9 @@ $signPackage = $jssdk->GetSignPackage();
 		</style>
 	</head>
 	<body>	
-			<button onclick="getLocation()">获取地理位置</button>
-			<button onclick="getPosition()">查看位置</button>	
-			<!-- <div class="main_a">
+			<!-- <button onclick="getLocation()">获取地理位置</button>
+			<button onclick="getPosition()">查看位置</button>	 -->
+			 <div class="main_a">
 				<div class = "home_a"></div>
 				<div class = "market_a"></div>
 				<div class = "order_a"></div>
@@ -86,11 +86,11 @@ $signPackage = $jssdk->GetSignPackage();
 			<div class="footer_a">
 			<figure>
 				<img src="img/f1.png" alt="" />
-				<p><a href="#home_a">首页</a></p>
+				<p><a href="#home_a" onclick="getLocation()" >首页</a></p>
 			</figure>
 			<figure>
 				<img src="img/f2.png" alt="" />
-				<p><a href="#market_a">闪送超市</a></p>
+				<p><a href="#market_a" onclick="getPosition()" >闪送超市</a></p>
 			</figure>
 			<figure>
 				<img src="img/f3.png" alt="" id="end"/>
@@ -101,7 +101,7 @@ $signPackage = $jssdk->GetSignPackage();
 				<img src="img/f4.png" alt="" />
 				<p><a href="#mine_a">我的</a></p>
 			</figure>
-					</div> -->
+					</div> 
 	</body>
 	<!--<script type="text/javascript">
 		(function(window){
@@ -178,7 +178,7 @@ function getLocation(){
 	var latitude=0;
 	var longitude=0;
 	function getPosition(){
-		wx.openLocation({
+	wx.openLocation({
     latitude: latitude, // 纬度，浮点数，范围为90 ~ -90
     longitude: longitude, // 经度，浮点数，范围为180 ~ -180。
     name: '', // 位置名
